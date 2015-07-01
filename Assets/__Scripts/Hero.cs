@@ -65,6 +65,7 @@ public class Hero : MonoBehaviour
         // If there is a parent with a tag
         if (go != null)
         {
+            print("Triggered: "+go.name);
             // Make sure it's not the same triggering go as last time
             if (go == lastTriggerGo)
             { // 2

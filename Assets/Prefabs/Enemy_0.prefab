@@ -62,7 +62,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 460946}
-  - 114: {fileID: 11446690}
   - 82: {fileID: 8284410}
   m_Layer: 9
   m_Name: EnemyCollor
@@ -406,43 +405,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11446690
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bf657afae4744148800e801ea8aa060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileVelocity: 20
-  enemyColler: {fileID: 160946}
-  fireRate: 1.60000002
-  ________________: 0
-  e_type: 1
-  def:
-    type: 0
-    letter: 
-    color:
-      r: .996078432
-      g: 0
-      b: 0
-      a: 1
-    enemyProjectilePrefab: {fileID: 116844, guid: 64963be002f7f11448b8526e95d4eb9f,
-      type: 2}
-    projectileColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    damageOnHit: 0
-    continuousDamage: 0
-    delayBetweenShots: 0
-    velocity: 20
-  lastShot: 0
-  laser: {fileID: 8300000, guid: 0c5372edee90a5c44849f64fb63f22e8, type: 3}
 --- !u!114 &11460946
 MonoBehaviour:
   m_ObjectHideFlags: 1

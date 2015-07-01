@@ -32,7 +32,8 @@ public class Main : MonoBehaviour
 
         Screen.SetResolution(630, 900, false);
 
-        GameObject scoreGO = GameObject.Find("ScoreCounter");
+        // Not yet
+        //GameObject scoreGO = GameObject.Find("ScoreCounter");
 
     }
 

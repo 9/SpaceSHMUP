@@ -250,22 +250,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!1 &1223544153 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 190912, guid: 2ca37bd1e94dedf42872c0ce4243554b, type: 2}
-  m_PrefabInternal: {fileID: 1698552776}
---- !u!135 &1223544157
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1223544153}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 4
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1698552776
 Prefab:
   m_ObjectHideFlags: 0
