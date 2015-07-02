@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 409664}
   - 54: {fileID: 5409674}
-  - 114: {fileID: 11409670}
+  - 114: {fileID: 11429958}
   m_Layer: 9
   m_Name: Enemy_2
   m_TagString: Enemy
@@ -79,7 +79,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 409672}
-  - 114: {fileID: 11409672}
   - 82: {fileID: 8282002}
   m_Layer: 9
   m_Name: EnemyCollor
@@ -96,7 +95,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 409674}
-  - 114: {fileID: 11409674}
   - 82: {fileID: 8212594}
   m_Layer: 9
   m_Name: EnemyCollor
@@ -428,7 +426,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11409670
+--- !u!114 &11429958
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -436,105 +434,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 109664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b99db29935bf3bc498ab4c6fea049c69, type: 3}
+  m_Script: {fileID: 11500000, guid: 1da02afb3451363449b91e7cc9753f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  health: 6
-  score: 300
-  weapons:
-  - {fileID: 11409672}
-  - {fileID: 11409674}
-  powerUpDropChance: .300000012
+  fireRate: .300000012
+  health: 10
+  score: 100
   showDamageForFrames: 2
-  explosion: {fileID: 169670, guid: 0712987e1ada07644876245ae474c6a9, type: 2}
-  ____________________: 0
+  powerUpDropChance: 1
+  ________________: 0
+  originalColors: []
+  materials: []
+  remainingDamageFrames: 0
   bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   boundsCenterOffset: {x: 0, y: 0, z: 0}
-  originalColors: []
-  materials: []
-  remainingDamageFrames: 0
-  lastShot: 0
   points: []
   birthTime: 0
   lifeTime: 10
   sinEccentricity: .600000024
---- !u!114 &11409672
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bf657afae4744148800e801ea8aa060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileVelocity: 20
-  enemyColler: {fileID: 109672}
-  fireRate: 1.60000002
-  ________________: 0
-  e_type: 1
-  def:
-    type: 1
-    letter: 
-    color:
-      r: .996078432
-      g: 0
-      b: 0
-      a: 1
-    enemyProjectilePrefab: {fileID: 116844, guid: 64963be002f7f11448b8526e95d4eb9f,
-      type: 2}
-    projectileColor:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    damageOnHit: 0
-    continuousDamage: 0
-    delayBetweenShots: 0
-    velocity: 20
-  lastShot: 0
-  laser: {fileID: 8300000, guid: 0c5372edee90a5c44849f64fb63f22e8, type: 3}
---- !u!114 &11409674
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bf657afae4744148800e801ea8aa060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileVelocity: 20
-  enemyColler: {fileID: 109674}
-  fireRate: 1.60000002
-  ________________: 0
-  e_type: 1
-  def:
-    type: 1
-    letter: 
-    color:
-      r: .996078432
-      g: 0
-      b: 0
-      a: 1
-    enemyProjectilePrefab: {fileID: 116844, guid: 64963be002f7f11448b8526e95d4eb9f,
-      type: 2}
-    projectileColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    damageOnHit: 0
-    continuousDamage: 0
-    delayBetweenShots: 0
-    velocity: 20
-  lastShot: 0
-  laser: {fileID: 8300000, guid: 0c5372edee90a5c44849f64fb63f22e8, type: 3}
 --- !u!135 &13509670
 SphereCollider:
   m_ObjectHideFlags: 1
