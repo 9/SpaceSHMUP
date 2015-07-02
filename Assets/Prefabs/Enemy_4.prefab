@@ -8,7 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489092}
-  - 114: {fileID: 11489092}
   - 82: {fileID: 8289092}
   m_Layer: 9
   m_Name: EnemyCollor
@@ -25,7 +24,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489094}
-  - 114: {fileID: 11489094}
   - 82: {fileID: 8289094}
   m_Layer: 9
   m_Name: EnemyCollor
@@ -42,7 +40,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489096}
-  - 114: {fileID: 11489096}
   - 82: {fileID: 8289096}
   m_Layer: 9
   m_Name: EnemyCollor
@@ -115,7 +112,7 @@ GameObject:
   - 4: {fileID: 489104}
   - 33: {fileID: 3389098}
   - 23: {fileID: 2389098}
-  - 136: {fileID: 13689098}
+  - 135: {fileID: 13568550}
   m_Layer: 9
   m_Name: Cockpit
   m_TagString: Untagged
@@ -234,7 +231,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 489104}
@@ -589,117 +586,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11489092
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bf657afae4744148800e801ea8aa060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileVelocity: 20
-  enemyColler: {fileID: 189092}
-  fireRate: 2.5
-  ________________: 0
-  e_type: 1
-  def:
-    type: 0
-    letter: 
-    color:
-      r: .996078432
-      g: .0546866544
-      b: .0546866544
-      a: 1
-    enemyProjectilePrefab: {fileID: 116844, guid: 64963be002f7f11448b8526e95d4eb9f,
-      type: 2}
-    projectileColor:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    damageOnHit: 0
-    continuousDamage: 0
-    delayBetweenShots: 0
-    velocity: 20
-  lastShot: 0
-  laser: {fileID: 8300000, guid: 0c5372edee90a5c44849f64fb63f22e8, type: 3}
---- !u!114 &11489094
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bf657afae4744148800e801ea8aa060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileVelocity: 20
-  enemyColler: {fileID: 189094}
-  fireRate: 3
-  ________________: 0
-  e_type: 1
-  def:
-    type: 1
-    letter: 
-    color:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    enemyProjectilePrefab: {fileID: 116844, guid: 64963be002f7f11448b8526e95d4eb9f,
-      type: 2}
-    projectileColor:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    damageOnHit: 0
-    continuousDamage: 0
-    delayBetweenShots: 0
-    velocity: 20
-  lastShot: 0
-  laser: {fileID: 8300000, guid: 0c5372edee90a5c44849f64fb63f22e8, type: 3}
---- !u!114 &11489096
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bf657afae4744148800e801ea8aa060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileVelocity: 20
-  enemyColler: {fileID: 189096}
-  fireRate: 5
-  ________________: 0
-  e_type: 1
-  def:
-    type: 1
-    letter: 
-    color:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    enemyProjectilePrefab: {fileID: 116844, guid: 64963be002f7f11448b8526e95d4eb9f,
-      type: 2}
-    projectileColor:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    damageOnHit: 0
-    continuousDamage: 0
-    delayBetweenShots: 0
-    velocity: 20
-  lastShot: 0
-  laser: {fileID: 8300000, guid: 0c5372edee90a5c44849f64fb63f22e8, type: 3}
 --- !u!114 &11489098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -708,55 +594,61 @@ MonoBehaviour:
   m_GameObject: {fileID: 189106}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5ee027161aa95743a16a30dcbf0c54f, type: 3}
+  m_Script: {fileID: 11500000, guid: db608bd79e9af9044ba182ba6724e7c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  health: 8
-  score: 1000
-  weapons:
-  - {fileID: 11489094}
-  - {fileID: 11489092}
-  - {fileID: 11489096}
-  powerUpDropChance: .5
+  fireRate: .300000012
+  health: 10
+  score: 100
   showDamageForFrames: 2
-  explosion: {fileID: 169670, guid: 0712987e1ada07644876245ae474c6a9, type: 2}
-  ____________________: 0
+  powerUpDropChance: 1
+  ________________: 0
+  originalColors: []
+  materials: []
+  remainingDamageFrames: 0
   bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   boundsCenterOffset: {x: 0, y: 0, z: 0}
-  originalColors: []
-  materials: []
-  remainingDamageFrames: 0
-  lastShot: 0
   points: []
   timeStart: 0
   duration: 4
   parts:
-  - name: 436f636b706974
-    health: 5
+  - name: Cockpit
+    health: 10
+    protectedBy: []
+    go: {fileID: 189102}
+    mat: {fileID: 0}
+  - name: Fuselage
+    health: 10
     protectedBy:
-    - 467573656c616765
+    - Wing_L
+    - Wing_R
     go: {fileID: 0}
     mat: {fileID: 0}
-  - name: 467573656c616765
-    health: 5
-    protectedBy:
-    - 57696e675f4c
-    - 57696e675f52
-    go: {fileID: 0}
-    mat: {fileID: 0}
-  - name: 57696e675f4c
-    health: 6
+  - name: Wing_L
+    health: 10
     protectedBy: []
     go: {fileID: 0}
     mat: {fileID: 0}
-  - name: 57696e675f52
-    health: 6
+  - name: Wing_R
+    health: 10
     protectedBy: []
     go: {fileID: 0}
     mat: {fileID: 0}
+--- !u!135 &13568550
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189104}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: -1.1920929e-07, z: 0}
 --- !u!136 &13689092
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -766,10 +658,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .100000001
-  m_Height: 5
+  m_Radius: .5
+  m_Height: 1
   m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 5.96046448e-08, y: 0, z: 0}
 --- !u!136 &13689094
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -779,29 +671,16 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .100000001
-  m_Height: 5
+  m_Radius: .5
+  m_Height: 1
   m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -2.38418579e-07, z: 0}
 --- !u!136 &13689096
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189102}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &13689098
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189104}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -819,6 +698,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
